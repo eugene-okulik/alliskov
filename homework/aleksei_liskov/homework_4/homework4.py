@@ -26,7 +26,7 @@ print(dividing_line)
 
 # Добавить в dict элемент с ключом ('i am a tuple',) и любым значением
 new_dict_item_key = ('i am a tuple',)
-my_dict['dict'][new_dict_item_key] = (1, 2, 3, 4 ,5)
+my_dict['dict'][new_dict_item_key] = (1, 2, 3, 4, 5)
 print(f"В dict добавлен элемент {new_dict_item_key}: {my_dict['dict'].get(new_dict_item_key)}")
 
 # Удалить любой элемент из dict
