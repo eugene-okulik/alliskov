@@ -24,9 +24,9 @@ deleted_list_item = my_dict['list'].pop(1)
 print(f"Из list удален второй элемент: {deleted_list_item}")
 print(dividing_line)
 
-# Добавить в dict элемент с ключом "i am a tuple" и любым значением
-new_dict_item_key = 'i am a tuple'
-my_dict['dict'][new_dict_item_key] = 'World Ocean'
+# Добавить в dict элемент с ключом ('i am a tuple',) и любым значением
+new_dict_item_key = ('i am a tuple',)
+my_dict['dict'][new_dict_item_key] = (1, 2, 3, 4 ,5)
 print(f"В dict добавлен элемент {new_dict_item_key}: {my_dict['dict'].get(new_dict_item_key)}")
 
 # Удалить любой элемент из dict
@@ -48,11 +48,3 @@ print(dividing_line)
 
 # Вывести на экран весь словарь
 print(f"Содержимое словаря my_dict: \n {my_dict}")
-
-# Возможно, вывести на экран весь словарь правильнее было бы с разделением по элементам
-# чтобы не получить одну длинную строку
-# print(f"Содержимое словаря my_dict: \n 'tuple': {my_dict['tuple']} "
-#       f"\n 'list': {my_dict['list']} "
-#       f"\n 'dict': {my_dict['tuple']} "
-#       f"\n 'set': {my_dict['set']}"
-#       )
