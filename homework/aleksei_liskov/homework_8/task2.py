@@ -1,19 +1,19 @@
-def fibonacci_sequence(limit=100):
+def fibonacci_sequence():
     fibonacci_row = [0, 1]
-    count = len(fibonacci_row)
-    while count < limit:
-        fibonacci_row.append(fibonacci_row[-1] + fibonacci_row[-2])
-        yield fibonacci_row
-        count += 1
+    counter = 2
+    while 1 == 1:
+        fibonacci_row = (fibonacci_row[-1], fibonacci_row[-1] + fibonacci_row[-2])
+        counter += 1
+        yield fibonacci_row[-1], counter
 
 
-for items in fibonacci_sequence(200000000):
-    if len(items) == 5:
-        print(f"Пятый элемент в списке: {items[-1]}")
-    elif len(items) == 200:
-        print(f"Двухсотый элемент в списке: {items[-1]}")
-    elif len(items) == 1000:
-        print(f"Тысячный элемент в списке: {items[-1]}")
-    elif len(items) == 100000:
-        print(f"Стотысячный элемент в списке: {items[-1]}")
+for number, position in fibonacci_sequence():
+    if position == 5:
+        print(f"Пятое число Фибоначчи: {number}")
+    elif position == 200:
+        print(f"Двухсотое число Фибоначчи: {number}")
+    elif position == 1000:
+        print(f"Тысячное число Фибоначчи: {number}")
+    elif position == 100000:
+        print(f"Стотысячное число Фибоначчи: {number}")
         break
