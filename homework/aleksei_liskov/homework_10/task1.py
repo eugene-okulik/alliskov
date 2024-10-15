@@ -12,4 +12,3 @@ def print_text(text):
 
 
 print_text('Hello')
-    
