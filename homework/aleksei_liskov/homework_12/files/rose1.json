@@ -1,0 +1,11 @@
+{
+	"name": "Rose",
+	"subtype": "Chinese",
+	"petal_color": "White",
+	"bloom_shape": "Cupped",
+	"stem_length": 30,
+	"wilting_time_in_days": 8,
+	"price_usd": 2.99,
+	"solitary": true,
+	"has_thorns": true
+}
