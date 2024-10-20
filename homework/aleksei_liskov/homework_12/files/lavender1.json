@@ -1,0 +1,10 @@
+{
+	"name": "Lavender",
+	"subtype": "Rosea",
+	"petal_color": "Rose",
+	"bloom_shape": "Spike",
+	"stem_length": 40,
+	"wilting_time_in_days": 25,
+	"price_usd": 1.25,
+	"solitary": false
+}

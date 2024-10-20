@@ -1,0 +1,11 @@
+{
+	"name": "Rose",
+	"subtype": "Polyantha",
+	"petal_color": "Rose",
+	"bloom_shape": "Urn Shaped",
+	"stem_length": 10,
+	"wilting_time_in_days": 14,
+	"price_usd": 1.49,
+	"solitary": true,
+	"has_thorns": true
+}

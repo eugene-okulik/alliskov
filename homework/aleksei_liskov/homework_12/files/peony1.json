@@ -1,0 +1,10 @@
+{
+	"name": "Peony",
+	"subtype": "Japanese",
+	"petal_color": "White and Red",
+	"bloom_shape": "Cupped",
+	"stem_length": 60,
+	"wilting_time_in_days": 10,
+	"price_usd": 2.99,
+	"solitary": true
+}

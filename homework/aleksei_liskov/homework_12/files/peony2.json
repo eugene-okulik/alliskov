@@ -1,0 +1,10 @@
+{
+	"name": "Peony",
+	"subtype": "Red Charm",
+	"petal_color": "Red",
+	"bloom_shape": "Globular",
+	"stem_length": 50,
+	"wilting_time_in_days": 14,
+	"price_usd": 2.15,
+	"solitary": true
+}
