@@ -13,9 +13,9 @@ class DataReader:
         items = []
         for line in lines:
             row_num = int(line[0:line.index('. ')])
-            date_str = line[line.index('. ')+2:line.index(' - ')]
+            date_str = line[line.index('. ') + 2:line.index(' - ')]
             date = datetime.strptime(date_str, '%Y-%m-%d %H:%M:%S.%f')
-            action = line[line.index(' - ')+3:len(line)]
+            action = line[line.index(' - ') + 3:len(line)]
             item = FileItem(row_num, date, action)
             items.append(item)
         return items
