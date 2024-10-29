@@ -11,7 +11,7 @@ cursor = db.cursor(dictionary=True)
 
 # Добавление студента
 add_student_query = '''
-insert into students (name, second_name, group_id) 
+insert into students (name, second_name, group_id)
 values (%s, %s, %s);
 '''
 
