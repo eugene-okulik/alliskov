@@ -22,7 +22,7 @@ def find_student_by_attributes(name, second_name, group_title, book_title, subje
     join books b on b.taken_by_student_id = s.id
     join `groups` g on g.id = s.group_id
     join marks m on m.student_id = s.id
-    join lessons l on l.id = m.lesson_id 
+    join lessons l on l.id = m.lesson_id
     join subjets s2 on s2.id = l.subject_id
     where s.name = %s
     and s.second_name = %s
