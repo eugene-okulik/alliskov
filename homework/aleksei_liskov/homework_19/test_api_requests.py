@@ -92,10 +92,10 @@ def test_put_update_object(create_object, api_url):
     with allure.step(f'Check that returned object ID is {new_object_id}'):
         assert str(put_response.json()['id']) == str(new_object_id), \
             f'Returned object ID {put_response.json()["id"]} while expected {new_object_id})'
-    with allure.step(f'Check that returned object address is Old Mexico'):
+    with allure.step('Check that returned object address is Old Mexico'):
         assert put_response.json()['name'] == 'Old Mexico', \
             f'Returned address {put_response.json()["data"]["address"]} while expected Old Mexico'
-    with allure.step(f'Check that returned data object is not changed'):
+    with allure.step('Check that returned data object is not changed'):
         assert put_response.json()['data'] == create_body['data'], \
             f'Returned data object {put_response.json()["data"]} while expected {create_body["data"]}'
 
@@ -131,7 +131,7 @@ def test_patch_update_object(create_object, name, api_url):
     with allure.step(f'Check that returned object name is {name}'):
         assert patch_response.json()['name'] == name, \
             f'Returned name {patch_response.json()["name"]} while expected {name}'
-    with allure.step(f'Check that returned data object contains of 6 elements'):
+    with allure.step('Check that returned data object contains of 6 elements'):
         assert len(patch_response.json()['data']) == 6, \
             f'Returned {len(patch_response.json()["data"])} elements in "data" object while expected 6'
     with allure.step(f'Check that returned object mail is {create_body["data"]["mail"]}'):
