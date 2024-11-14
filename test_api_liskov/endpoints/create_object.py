@@ -18,13 +18,13 @@ class CreateObject(Endpoint):
             print(f'\n Test object created with ID {self.response.json()["id"]}')
         except requests.exceptions.JSONDecodeError:
             self.object_id = None
-            print(f'\n Test object creation failed')
+            print('\n Test object creation failed')
         finally:
             self.status_code = self.response.status_code
 
     @allure.step('Check that ID assigned to the object')
     def check_id(self):
-        assert self.response.json()["id"], f'ID has not returned'
+        assert self.response.json()["id"], 'ID has not returned'
 
     @allure.step('Compare payload and response data')
     def check_response_data(self):

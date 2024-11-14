@@ -20,7 +20,7 @@ class PartiallyObjectUpdate(Endpoint):
             print(f'\n Test object {self.object_id} updated')
         except requests.exceptions.JSONDecodeError:
             self.object_id = None
-            print(f'\n Test object update failed')
+            print('\n Test object update failed')
         finally:
             self.status_code = self.response.status_code
 
