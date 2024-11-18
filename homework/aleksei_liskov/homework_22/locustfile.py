@@ -3,7 +3,13 @@ import requests
 import random
 from faker import Faker
 
+
 class DummyJsonUser(HttpUser):
+    fake = None
+    user_id = None
+    user_name = None
+    password = None
+    token = None
 
     def on_start(self):
         self.fake = Faker()
