@@ -31,21 +31,21 @@ def test_student_registration(page: Page):
     page.locator('//button[@id="submit"]').click()
 
     expect(page.locator
-           (f'//tbody//td[text()="Student Name"]/following-sibling::td[1]')).to_have_text('John Doe')
+           ('//tbody//td[text()="Student Name"]/following-sibling::td[1]')).to_have_text('John Doe')
     expect(page.locator
-           (f'//tbody//td[text()="Student Email"]/following-sibling::td[1]')).to_have_text('johnnydoey@test.com')
+           ('//tbody//td[text()="Student Email"]/following-sibling::td[1]')).to_have_text('johnnydoey@test.com')
     expect(page.locator
-           (f'//tbody//td[text()="Gender"]/following-sibling::td[1]')).to_have_text('Male')
+           ('//tbody//td[text()="Gender"]/following-sibling::td[1]')).to_have_text('Male')
     expect(page.locator
-           (f'//tbody//td[text()="Mobile"]/following-sibling::td[1]')).to_have_text('1234567890')
+           ('//tbody//td[text()="Mobile"]/following-sibling::td[1]')).to_have_text('1234567890')
     expect(page.locator
-           (f'//tbody//td[text()="Date of Birth"]/following-sibling::td[1]')).to_have_text(convert_date('02.12.2000'))
+           ('//tbody//td[text()="Date of Birth"]/following-sibling::td[1]')).to_have_text(convert_date('02.12.2000'))
     expect(page.locator
-           (f'//tbody//td[text()="Subjects"]/following-sibling::td[1]')).to_have_text('Arts')
+           ('//tbody//td[text()="Subjects"]/following-sibling::td[1]')).to_have_text('Arts')
     expect(page.locator
-           (f'//tbody//td[text()="Hobbies"]/following-sibling::td[1]')).to_have_text('Sports')
+           ('//tbody//td[text()="Hobbies"]/following-sibling::td[1]')).to_have_text('Sports')
     expect(page.locator
-           (f'//tbody//td[text()="Address"]/following-sibling::td[1]')
+           ('//tbody//td[text()="Address"]/following-sibling::td[1]')
            ).to_have_text('Country 1, City 2, Street 3, Housebuilding 4, Apartment 5')
     expect(page.locator
-           (f'//tbody//td[text()="State and City"]/following-sibling::td[1]')).to_have_text('NCR Delhi')
+           ('//tbody//td[text()="State and City"]/following-sibling::td[1]')).to_have_text('NCR Delhi')
