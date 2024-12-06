@@ -1,0 +1,5 @@
+sale_tab_on_panel = '//a[@href="https://magento.softwaretestingboard.com/sale.html"]/..'
+women_deals_category = '//strong/span[text()="Women\'s Deals"]'
+men_deals_category = '//strong/span[text()="Mens\'s Deals"]'
+gear_deals_category = '//strong/span[text()="Gear Deals"]'
+main_promo = '//a[@class="block-promo sale-main"]'
